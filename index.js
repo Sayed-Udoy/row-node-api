@@ -6,6 +6,7 @@
 */
 const http = require('http');
 
+const {handleReqRes} = require("./helpers/handleReqRes")
 // app object - module scaffolidng
 
 const app = {};
@@ -25,8 +26,5 @@ app.createServer = ()=>{
 
 // Handle Request Response 
 
-app.handleReqRep = (req,res)=>{
-    // res.send("hello world")
-    res.end("hello programmer")
-}
+app.handleReqRep = handleReqRes
 app.createServer()
