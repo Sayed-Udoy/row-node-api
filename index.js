@@ -4,11 +4,12 @@
 * Author : Sayed Udoy 
 * Date: 21/22/2025
 */
+
+// dependecies 
+const {handleReqRes} = require("./helpers/handleReqRes")
 const http = require('http');
 
-const {handleReqRes} = require("./helpers/handleReqRes")
 // app object - module scaffolidng
-
 const app = {};
 
 // Configaration

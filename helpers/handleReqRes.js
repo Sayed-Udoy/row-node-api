@@ -21,6 +21,7 @@ handler.handleReqRes = (req,res)=>{
     const method = req.method.toLowerCase()
     const queryStringObject = parsedUrl.query
     const headerObject = req.headers
+    console.log(req.headers)
 
     const decoder = new StringDecoder("utf-8")
     let realData = '' 
